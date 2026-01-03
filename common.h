@@ -23,7 +23,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define UNREACHABLE(s) assert(0 && (s))
 #define UNUSED(x) (void)(x)
 
 #define ERROR_BUF_LENGTH 1024
