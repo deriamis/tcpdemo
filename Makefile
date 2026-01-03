@@ -1,6 +1,3 @@
-PROJECT_NAME    = libtelnet
-PROJECT_VERSION = 1.0
-
 CC              = gcc
 CFLAGS          = -ggdb -gdwarf-5 -std=c17 -pedantic -pedantic-errors -Wall -Wextra -Werror
 CPPFLAGS        = -D_DEFAULT_SOURCE -D_POSIX_SOURCE=200809L -D_XOPEN_SOURCE=800
@@ -17,8 +14,6 @@ PROGRAMS.client = client$(EXEEXT)
 
 OBJECTS         = $(OBJECTS.server) $(OBJECTS.client)
 PROGRAMS        = $(PROGRAMS.server) $(PROGRAMS.client)
-DYNAMIC_LIBS    = libtelnet.so
-STATIC_LIBS     = libtelnet.a
 
 all:  $(PROGRAMS)
 
